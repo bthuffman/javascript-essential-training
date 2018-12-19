@@ -69,3 +69,5 @@ console.log("Small size: ", smallSize());
 console.log("Medium size: ", mediumSize());
 console.log("Large size: ", largeSize());
 console.log("Extra large size: ", xlargeSize());
+
+//Note the other definition of a closure is a function that remembers the environment which it was created in.
