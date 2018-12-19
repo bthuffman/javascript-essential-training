@@ -6,3 +6,6 @@ var justAnotherVariable;
 
 // Try this in your console:
 // console.log(typeof insertVariableName);
+//= is assignment operator.
+//Arithmetic operators are what you'd expect.
+//
