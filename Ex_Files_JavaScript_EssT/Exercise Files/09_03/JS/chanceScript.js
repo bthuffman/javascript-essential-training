@@ -1,3 +1,4 @@
+//Demonstrates break
 const MIN = 0;
 const MAX = 36;
 var testNumber = 15;
@@ -15,3 +16,4 @@ while (MAX) {
 }
 
 console.log("The script went " + i + " rounds before finding " + testNumber + ".");
+//Use break anytime you need to terminate a loop when something specific happens.

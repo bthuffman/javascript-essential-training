@@ -1,3 +1,4 @@
+//demonstrates continue. This finds the prime numbers between 1-100.
 const CEILING = 100;
 
 function primeTest(testValue) {
@@ -12,5 +13,9 @@ function primeTest(testValue) {
 
 for (let i = 2; i<=CEILING; i++) {
     let result = primeTest(i);
+    if ( result == false) {
+        continue;
+    }
     console.log(i + " is a prime number.");
 }
+//Use continue when you need to avoid a certain condition within a loop.

@@ -57,7 +57,14 @@ function start() {
 
 // Reset everything:
 function reset() {
-    console.log("reset button has been pressed!");
+    clearInterval(interval); //reset interval timer, insures browser isn't running an interval in the background when started new one.
+    interval = null; //when we reassign set interval not setting up a new interval because that would cause multiple processes to run unneceesarily
+    timer = [0,0,0,0]; //set it back to 0.
+    timerRunning = false; //this way can run the clock again.
+
+   testArea.value = ""; //clear the text area
+   theTimer.innerHTML = "00:00:00" //reset timer back to 0
+   testWrapper.style.borderColor = "grey";
 }
 
 // Event listeners for keyboard input and the reset
